@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Lectern Notes Support</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #5f5f66;
+    --rule: #d9d9de;
+    --accent: #2f5d8a;
+    --panel: #f4f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161618;
+      --fg: #ececf0;
+      --muted: #a4a4ad;
+      --rule: #3a3a40;
+      --accent: #8db8e6;
+      --panel: #202024;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161618;
+    --fg: #ececf0;
+    --muted: #a4a4ad;
+    --rule: #3a3a40;
+    --accent: #8db8e6;
+    --panel: #202024;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.25em; margin: 2.2em 0 0.4em; padding-top: 0.6em; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1.05em; margin: 1.6em 0 0.3em; }
+  p, li { overflow-wrap: anywhere; }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.25em 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin: 0 0 1.5em; }
+  .summary { background: var(--panel); border-radius: 12px; padding: 4px 18px; margin: 1.5em 0; }
+  .summary li { margin: 0.5em 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95em; margin: 0.8em 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  footer { color: var(--muted); font-size: 0.9em; margin-top: 3em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Lectern Notes Support</h1>
+<p class="meta">For Lectern Notes on iPad · version 1.0 and later</p>
+
+<p>Lectern Notes records your lectures, transcribes them on your iPad, and helps you turn the
+transcript into notes, a summary, quiz questions, flashcards and worked problems.</p>
+
+<div class="summary">
+<ul>
+  <li><strong>Need help?</strong> Email <a href="mailto:maxmcgee19@gmail.com">maxmcgee19@gmail.com</a>.
+  Please include your iPad model, your iPadOS version and what happened.</li>
+  <li><strong>Diagnostics:</strong> Settings ▸ Storage ▸ Send diagnostics makes a small report you can
+  attach to your email. It shows you what it contains first, and it holds no audio and no transcript
+  text.</li>
+</ul>
+</div>
+
+<h2>Requirements</h2>
+<ul>
+  <li>An iPad with iPadOS 26 or later.</li>
+  <li>About 1.5&nbsp;GB of free storage for the first download (the speech model itself takes about
+  490&nbsp;MB), plus room for your recordings. The app warns you if storage runs low while you
+  record.</li>
+  <li>An internet connection the first time you open the app, to download the speech model.
+  After that, recording and transcription work offline.</li>
+</ul>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open the app. A welcome page explains the speech model and waits for you to tap
+  <strong>Download</strong> (about 490&nbsp;MB, from Hugging Face). It then prepares the model for your
+  iPad and closes by itself. This takes a few minutes on good Wi-Fi.</li>
+  <li>Tap <strong>Record</strong> at the start of a lecture and <strong>Stop</strong> at the end. The
+  first time, iPadOS asks for permission to use the microphone.</li>
+  <li>After Stop, open the lecture to read its transcript and make a study guide.</li>
+</ol>
+
+<h2>Common questions</h2>
+
+<h3>Can I lock the screen while recording?</h3>
+<p>Yes. Recording continues when the screen is locked or you switch to another app. iPadOS does not
+let the app transcribe while it is not on screen, so the recorder shows how much is waiting, and the
+app transcribes those parts from the saved audio when you come back to it and after you press Stop.
+Keeping Lectern on screen lets it catch up sooner. A study guide waits until the transcript is
+complete.</p>
+
+<h3>Does it work without internet?</h3>
+<p>Yes, once the speech model has downloaded. Recording and transcription happen on your iPad.</p>
+
+<h3>How do I make a study guide with Claude, ChatGPT or Gemini?</h3>
+<p>Choose the service from the Study Guide menu. The first time, the app shows what will be shared
+and asks your permission. It then copies a prompt to your clipboard and opens the service; paste the
+prompt there, copy the reply, come back and tap <strong>Paste</strong>. If a reply cannot be
+imported, the app offers a fix-up prompt to paste back into the same chat. You need your own account
+with that service. You can withdraw permission in Settings ▸ About ▸ Privacy.</p>
+
+<h3>What about Apple Intelligence?</h3>
+<p>On iPads where Apple Intelligence is available and turned on, the app can write a first draft of
+notes on your iPad. These drafts are labelled as a first draft and can contain mistakes, especially
+in maths.</p>
+
+<h3>The app cannot hear me</h3>
+<p>Check that the microphone is allowed: Settings ▸ Privacy &amp; Security ▸ Microphone, and turn on
+Lectern.</p>
+
+<h3>Where are my recordings kept?</h3>
+<p>On your iPad, inside the app. They are included in your iPad’s backups according to your backup
+settings. Deleting a lecture deletes its recording, transcript and study material; deleting the app
+deletes everything it stored. See the <a href="privacy">Privacy Policy</a> for details.</p>
+
+<h3>Am I allowed to record my lectures?</h3>
+<p>Many universities and colleges have rules about recording classes. Please check your
+institution’s policy and get permission where it is required.</p>
+
+<footer>
+<p><a href="./">Lectern Notes</a> · <a href="support">Support</a> · <a href="privacy">Privacy Policy</a></p>
+<p>Claude is a trademark of Anthropic, PBC. ChatGPT is a trademark of OpenAI. Gemini is a trademark
+of Google LLC. Apple Intelligence, iPad and iPadOS are trademarks of Apple Inc. Lectern Notes is not
+affiliated with or endorsed by any of these companies.</p>
+</footer>
+</main>
+</body>
+</html>

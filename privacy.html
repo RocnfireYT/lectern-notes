@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Lectern Notes Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #5f5f66;
+    --rule: #d9d9de;
+    --accent: #2f5d8a;
+    --panel: #f4f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161618;
+      --fg: #ececf0;
+      --muted: #a4a4ad;
+      --rule: #3a3a40;
+      --accent: #8db8e6;
+      --panel: #202024;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161618;
+    --fg: #ececf0;
+    --muted: #a4a4ad;
+    --rule: #3a3a40;
+    --accent: #8db8e6;
+    --panel: #202024;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.25em; margin: 2.2em 0 0.4em; padding-top: 0.6em; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1.05em; margin: 1.6em 0 0.3em; }
+  p, li { overflow-wrap: anywhere; }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.25em 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin: 0 0 1.5em; }
+  .summary { background: var(--panel); border-radius: 12px; padding: 4px 18px; margin: 1.5em 0; }
+  .summary li { margin: 0.5em 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95em; margin: 0.8em 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  footer { color: var(--muted); font-size: 0.9em; margin-top: 3em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Lectern Notes Privacy Policy</h1>
+<p class="meta">Effective 30 September 2026 · Applies to Lectern Notes for iPad, version 1.0 and later</p>
+
+<p>Lectern Notes records your lectures, transcribes them on your iPad, and helps you turn the
+transcript into study material. It is made by Max McGee, an individual developer (“I”, “me”).
+This page explains exactly what the app does with your information. The short version is below;
+the details follow.</p>
+
+<div class="summary">
+<ul>
+  <li><strong>I do not collect your data.</strong> The app has no account, no sign-in, no analytics,
+  no advertising, no tracking, and no server of mine that anything is sent to.</li>
+  <li><strong>Your recordings, transcripts and study guides stay on your iPad</strong>, unless you
+  choose to share or export them.</li>
+  <li><strong>Transcription happens on your iPad.</strong> Audio is not sent anywhere unless you
+  set up your own Lectern server (an advanced option that is off by default).</li>
+  <li><strong>If you use Claude, ChatGPT or Gemini</strong> to write a study guide, the app asks your
+  permission first, then copies a prompt containing your transcript for <em>you</em> to paste into
+  that service. The app itself sends nothing to those companies.</li>
+  <li><strong>The first time you open the app it downloads a speech-recognition model</strong>
+  (about 490&nbsp;MB) from Hugging Face, after you tap Download. No personal information is sent
+  with that download. It uses whatever connection your iPad has, including mobile data.</li>
+</ul>
+</div>
+
+<h2>1. Information stored on your iPad</h2>
+<p>The app keeps the following inside its own storage on your iPad. I cannot see any of it.</p>
+<ul>
+  <li><strong>Audio recordings</strong> of lectures you record or import.</li>
+  <li><strong>Transcripts</strong> made from that audio.</li>
+  <li><strong>Study material</strong>: notes, summaries, quizzes, flashcards and worked problems,
+  whether written on your iPad or pasted back from a chat service.</li>
+  <li><strong>Files you add</strong>, such as lecture slides (PDF or PowerPoint), videos and
+  recordings you open in the app, and the text read from them.</li>
+  <li><strong>Courses you create</strong>: their names, codes and vocabulary lists.</li>
+  <li><strong>Settings</strong>, such as which speech model and chat service you prefer, and which
+  chat services you have allowed.</li>
+  <li><strong>Technical logs</strong>: how long each piece of audio took to transcribe, when a
+  recording started and stopped, and similar timing and status records. These logs contain no
+  audio and none of the words that were spoken.</li>
+  <li><strong>Replies the app could not read</strong>: when a chat service’s reply you paste cannot
+  be imported, its text is kept (the most recent 20) so the problem can be looked into. These stay
+  on your iPad and are never included in a diagnostics report.</li>
+</ul>
+<p>When you open a recording, video or document from another app (for example Voice Memos or Files),
+the app reads the file’s creation date so the lecture is dated when the class happened.</p>
+<p>This information is included in your iPad’s backups (iCloud Backup or a backup to a computer)
+according to your own backup settings, and is handled by Apple under Apple’s terms. The downloaded
+speech model is excluded from backups. Deleting a lecture in the app deletes its recording,
+transcript and study material. Deleting the app deletes everything it stored.</p>
+
+<h2>2. The microphone</h2>
+<p>The app uses the microphone only after you press <strong>Record</strong>, and only until you
+press <strong>Stop</strong>. So that a lecture is not cut short, recording continues if you lock the
+screen or switch to another app; iPadOS shows its microphone indicator for as long as the app is
+recording. The app does not listen at any other time.</p>
+
+<h2>3. Processing on your iPad</h2>
+<ul>
+  <li><strong>Transcription</strong> uses the open-source Whisper speech model, run on your iPad
+  through WhisperKit. Your audio is not uploaded to do this.</li>
+  <li><strong>Live preview text</strong> shown while you record comes from Apple’s on-device speech
+  recogniser. iPadOS may download Apple’s English speech assets to your iPad to make this possible;
+  that download is managed by Apple.</li>
+  <li><strong>Apple Intelligence.</strong> On iPads where Apple Intelligence is available and turned
+  on, the app can use Apple’s on-device language model to write notes and attempt worked problems.
+  This runs on your iPad through Apple’s Foundation Models framework. The app does not send your
+  transcript to Apple to do this. These drafts are labelled in the app as a fast first draft that
+  can contain mistakes.</li>
+</ul>
+
+<h2>4. Connections the app makes</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>When</th><th>To whom</th><th>What is sent</th></tr>
+  <tr>
+    <td>First launch; when you choose a different speech model in Settings; the first time you use
+    <strong>Re-transcribe (high accuracy)</strong>, which uses a second, larger model (about
+    1.5&nbsp;GB by default); and when you ask the app to download a model again</td>
+    <td>Hugging Face (huggingface.co and its download servers)</td>
+    <td>Requests for the model files and the matching tokenizer files. Like any web request, these
+    reveal your network’s IP address and a standard system user-agent string (app name and version,
+    iPadOS version). No account, identifier, recording or transcript is sent. The download uses
+    whatever connection your iPad has at the time, Wi-Fi or mobile data; the app does not restrict
+    it to Wi-Fi. Once a model is complete on your iPad, the app does not contact Hugging Face for it
+    again unless its files are missing or damaged, or you ask for it to be downloaded again.</td>
+  </tr>
+  <tr>
+    <td>Only if you turn on “Use a transcription server” and enter an address</td>
+    <td>The Lectern server <em>you</em> run, at the address you enter</td>
+    <td>See section 6.</td>
+  </tr>
+</table>
+</div>
+<p>The app makes no other network connections of its own. It contains no analytics, advertising or
+crash-reporting libraries.</p>
+
+<h2>5. Chat services: Claude, ChatGPT and Gemini</h2>
+<p>You can ask a chat service you already use to write a study guide or solve a worked problem.
+Lectern Notes does this without an API key and without an account of its own:</p>
+<ol>
+  <li>The first time you choose a service, the app shows what will be shared and with which company,
+  and asks for your permission. If you cancel, nothing is copied or opened.</li>
+  <li>With your permission, the app copies a prompt to your clipboard and opens the service’s website
+  or app. <strong>You</strong> paste the prompt there. The app does not send it.</li>
+  <li>You copy the reply and tap <strong>Paste</strong> in Lectern Notes. The reply is checked and
+  stored on your iPad.</li>
+</ol>
+<p>Depending on what you asked for, the prompt you paste can contain:</p>
+<ul>
+  <li>the transcript of the lecture, or the part of it around one worked problem;</li>
+  <li>the lecture’s title and date, and the course’s name, code and vocabulary list;</li>
+  <li>text read from slides you added to the lecture;</li>
+  <li>the times at which worked examples were detected, and, for a single problem, the app’s previous
+  attempt at it and the checker’s notes on it;</li>
+  <li>instructions telling the chat service how to format its reply.</li>
+</ul>
+<p>The prompt never contains your audio. Once you paste it, the company that runs the service
+receives it and handles it under its own terms and privacy policy, and under any settings in your
+account with them (for example whether your chats may be used to train their models):</p>
+<ul>
+  <li>Claude is run by Anthropic: <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a></li>
+  <li>ChatGPT is run by OpenAI: <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a></li>
+  <li>Gemini is run by Google: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+<p>You can withdraw the permission you gave for any service at any time in
+<strong>Settings ▸ About ▸ Privacy</strong>; the app will ask again before it next opens that service.
+Withdrawing permission does not delete anything you already pasted into a chat service; do that in
+your account with that company.</p>
+<p>To paste a reply, the app uses the system Paste button, so it reads your clipboard only when you
+tap it.</p>
+
+<h2>6. Your own Lectern server (advanced, off by default)</h2>
+<p>Some people run the Lectern transcription server on another computer of their own and reach it
+over a private network such as Tailscale. This is an advanced option in Settings ▸ About ▸
+Advanced. If, and only if, you turn it on and enter an address, the app sends that server:</p>
+<ul>
+  <li>pieces of audio while you record, so the server can transcribe them, together with the
+  previous sentence of the transcript and the course vocabulary to help recognition;</li>
+  <li>if the server offers a live study guide: the lecture’s title, the course’s name, its
+  vocabulary list and the kind of guide wanted, when a recording starts;</li>
+  <li>if the server offers worked-problem solutions: the transcript text around each worked problem,
+  its label, the course vocabulary and, when the app asks for a correction, the checker’s notes;</li>
+  <li>if you choose <strong>Re-transcribe on server</strong> for a finished lecture: the whole
+  lecture’s audio, with its title, course name, date and vocabulary. The app asks the server to
+  delete that audio once the transcript is back.</li>
+</ul>
+<p>Each lecture sent to the server is identified by a random number the app made for it, which says
+nothing about you.</p>
+<p>The server is yours; I do not operate one and receive none of this. The address is stored in the
+app’s settings and the access token in the iPad’s Keychain. Recording always saves audio on your
+iPad first, whether or not a server is used.</p>
+
+<h2>7. Sharing and exporting</h2>
+<p>Nothing leaves the app unless you choose to send it:</p>
+<ul>
+  <li><strong>Export</strong> saves a study guide or transcript as Markdown or PDF to a place you
+  pick, or hands it to the iPadOS share sheet.</li>
+  <li><strong>Send diagnostics</strong> (Settings ▸ Storage) builds a small report, shows you what it
+  contains, and hands it to the share sheet only when you tap Share. You choose who receives it. It
+  contains: the iPad model, iPadOS version, app version and build, memory size, free storage,
+  thermal state, battery level, whether Low Power Mode is on, the selected speech model, whether
+  Apple Intelligence is available, the app’s own status log lines, and the timing logs described in
+  section 1. It contains no audio, transcript or study-guide text. If you send it to me, I use it only
+  to investigate the problem you reported, and delete it when I no longer need it for that.</li>
+</ul>
+
+<h2>8. Information Apple may share with me</h2>
+<p>If you have chosen to share analytics with app developers in your iPad’s settings (Settings ▸
+Privacy &amp; Security ▸ Analytics &amp; Improvements), Apple may share crash reports and aggregated
+usage statistics about Lectern Notes with me. That is controlled by you and handled under
+<a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. If you test a beta through
+TestFlight, feedback and crash reports you choose to send reach me through Apple.</p>
+
+<h2>9. Recording other people</h2>
+<p>Lectures include other people’s voices. Many universities and colleges have rules about recording
+classes, and the law on recording differs between places. Please check your institution’s policy
+and get permission where it is required. What you record, and what you share, is your
+responsibility.</p>
+
+<h2>10. Children</h2>
+<p>Lectern Notes is intended for students in further and higher education and is not directed at
+children under 13. It collects no personal information from anyone.</p>
+
+<h2>11. Your choices and rights</h2>
+<p>Because I hold no personal information about you, there is nothing for me to access, correct,
+export or delete on your behalf. Everything the app stores is under your control on your iPad:
+delete a lecture in the app, or delete the app to remove all of it. If you sent me a diagnostics
+report or an email, you can ask me to delete it using the contact below.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>If a future version changes what the app does with your information, this page will be updated
+before that version is released, and the effective date above will change. The version shown in the
+app is the one that applies to the version you have installed.</p>
+
+<h2>13. Contact</h2>
+<p>Questions about this policy: <a href="mailto:maxmcgee19@gmail.com">maxmcgee19@gmail.com</a></p>
+<p>The current version of this policy is published at
+<a href="https://rocnfireyt.github.io/lectern-notes/privacy">https://rocnfireyt.github.io/lectern-notes/privacy</a>.</p>
+
+<footer>
+<p>Claude is a trademark of Anthropic, PBC. ChatGPT is a trademark of OpenAI. Gemini is a trademark
+of Google LLC. Apple Intelligence, iPad and iPadOS are trademarks of Apple Inc. Lectern Notes is not
+affiliated with or endorsed by any of these companies.</p>
+</footer>
+
+</main>
+</body>
+</html>
